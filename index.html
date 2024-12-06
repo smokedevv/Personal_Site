@@ -1,75 +1,38 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Сайт-визитка Smokedev1 - Ваш надежный партнер в разработке веб-приложений и сайтов.">
-    <title>Smokedev1 - Разработка веб-приложений</title>
+    <title>My Stylish Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="lang-btn" data-lang="en">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" alt="EN">
+        </button>
+        <button class="lang-btn" data-lang="uk">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1280px-Flag_of_Ukraine.svg.png" alt="UA">
+        </button>
+    </div>
+
     <header>
-        <div class="container">
-            <img src="images/logo.png" alt="Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1 id="main-title">Welcome to My Blog!</h1>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <h1>Добро пожаловать в Smokedev1!</h1>
-            <p>Мы создаем качественные веб-приложения и сайты для вашего бизнеса.</p>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>О нас</h2>
-            <p>Smokedev1 - команда профессионалов, которая разрабатывает уникальные веб-решения для бизнеса. Мы помогаем вам реализовать идеи и добиться успеха в интернете.</p>
-        </div>
-    </section>
-
-    <section id="services" class="section">
-        <div class="container">
-            <h2>Наши услуги</h2>
-            <ul>
-                <li>Разработка сайтов под ключ</li>
-                <li>Создание веб-приложений</li>
-                <li>SEO-оптимизация</li>
-                <li>Поддержка и сопровождение</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Контакты</h2>
-            <p>Для связи с нами используйте форму ниже или отправьте письмо на <a href="mailto:info@smokedev1.ru">info@smokedev1.ru</a></p>
-            <form action="mailto:info@smokedev1.ru" method="POST" enctype="multipart/form-data">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Сообщение:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Отправить</button>
-            </form>
-        </div>
-    </section>
+    <main>
+        <h2 id="post-heading">Latest Posts</h2>
+        <ul>
+            <li><a href="posts/post1.html">Post 1</a></li>
+            <li><a href="posts/post2.html">Post 2</a></li>
+        </ul>
+    </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Smokedev1. Все права защищены.</p>
-        </div>
+        <p>&copy; 2024 My Stylish Blog</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
